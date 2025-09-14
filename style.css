@@ -1,0 +1,623 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    
+}
+
+html {
+    font-size: 18px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    
+}
+
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: rgb(252, 249, 244);
+}
+
+header h1 {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: .2rem;
+    margin-left: 1rem;
+    color: black;
+    
+}
+
+h1 img {
+    width: 3.5rem;
+    padding-right: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    
+
+}
+
+nav  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav ul li a:hover{
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    transition: 0.7s ease, transform 2.3s ease;
+    
+}
+
+nav .active {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 999;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    display: none;
+    
+    
+    
+}
+
+.nav-menu {
+    display: none;
+}
+
+#showcase h2{
+    font-weight: 200;
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+    animation: fadeIn 3.1s;
+}
+
+#showcase p {
+    font-weight: 400;
+    width: 60%;
+    font-size: 1.15rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    animation: fadeIn 3.1s;
+}
+
+#showcase a {
+    background-color: rgba(218, 165, 32, 0.848);
+    text-decoration: none;
+    color: white;
+    font-size: 1.15rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+
+}
+
+#showcase a:hover {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+
+}
+
+
+.a {
+    background-image: url('https://cdn.pixabay.com/photo/2015/03/17/15/48/lady-justice-677945_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.b {
+    background-image: url('https://cdn.pixabay.com/photo/2014/03/20/22/04/law-books-291690_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+.c {
+    background-image: url('https://cdn.pixabay.com/photo/2021/11/19/10/19/law-6808677_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+    color: white;
+    border-radius: 1.2rem;
+    text-align: center;
+}
+
+#product {
+    background-color: rgba(250, 235, 215, 0.1138);
+    padding-top: 3rem;
+    animation: fadeInOut 5.1s;
+}
+
+
+.joining {
+    margin-top: -5.9rem;
+    text-align: center;
+}
+
+.carousel-item svg {
+    width: 6rem;
+    background-color: rgb(247, 243, 238);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 1rem;
+    fill: black;
+    
+}
+
+.exp img {
+    width: 100%;
+    aspect-ratio: 17/16;
+    border-radius: 2rem;
+}
+.carousel-item h3 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.ban {
+    margin-left: -6rem;
+    z-index: 1;
+}
+
+.ban:hover {
+    transform: scale(1.1);
+    transition: transform .7s ease-in-out .5s;
+}
+#attorney{
+    background-color: rgba(250, 235, 215, 0.1138);
+}
+
+#attorney img{
+    width: 20rem;
+}
+
+
+#review {
+    background-image: url('https://cdn.pixabay.com/photo/2018/07/31/16/15/gavel-3575414_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(50%); */
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+  
+}
+
+.reviews {
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+
+
+.reviews p {
+
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.reviews h4{
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.five-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;   
+    padding-bottom: 6rem;
+}
+
+.five-stars img{
+    width: 2rem;
+}
+
+#appointment {
+    background-color: rgba(250, 235, 215, 0.1138);
+    text-align: center;
+    margin-top: 10rem;
+    animation: fadeInOut 3.1s;
+    margin-bottom: 10rem;
+
+}
+@keyframes fadeIn {
+from{transform: translateY(0);}
+to{transform: translateY(-1rem);}
+from{opacity: 0;}
+to{opacity: 1;}
+}
+@keyframes fadeInOut {
+
+from{opacity: 0;}
+to{opacity: 1;}
+}
+
+.appointment:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out 0.9s;
+    box-shadow: 5px 5px 10px black;
+}
+
+.appointment {
+    background-image: url('https://cdn.pixabay.com/photo/2021/06/28/11/29/police-6371309_1280.jpg');
+     background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(50%); */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    padding: 5rem;
+    
+}
+
+.appointment h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#appointment form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-group {
+    padding-bottom: 1rem;
+}
+
+.td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#date {
+    width: 100%;
+}
+#time {
+    width: 100%;
+}
+.appointment select {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.appointment button {
+    width: 100%;
+    color: white;
+    background-color: rgb(187, 141, 25);
+    padding: 1rem;
+}
+
+.appointment button:hover {
+    color: white;
+    background-color: rgb(1, 1, 25);
+    transition: 0.5s ease 0.5s;
+    
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+   
+   
+}
+
+.foot {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.foot ul li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.book_now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+#call-now {
+    background-image: url('https://cdn.pixabay.com/photo/2017/06/09/22/56/lady-justice-2388500_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5rem;
+}
+
+#call-now h4{
+    font-size: 3rem;
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+
+#call-now a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(187, 141, 25);
+    padding: 2rem;
+    border-radius: 1rem;
+    animation: fadeInOut 3.1s;
+
+}
+
+#call-now a:hover {
+    background-color: black;
+    transform: scale(1.6);
+    transition: 0.6s ease-in 0.8s;
+}
+
+
+#summary {
+    padding-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.867);
+    /* padding-bottom: 3rem; */
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 3rem;
+    color: white;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+.flex a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1rem;
+}
+
+.flex h5 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flex h4 {
+    color: white;
+}
+
+.flex h6, .flex p {
+    font-size: 0.8rem;
+}
+
+.first h3 {
+    font-weight: 200;
+    font-size: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+.first h3 img {
+    width: 3rem;
+}
+.first h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: flex;
+    
+}
+
+.input input {
+    padding: 1rem;
+    width: 85%;
+    border: none;
+
+}
+
+.input button {
+    border: none;
+    color: white;
+    background-color: black;
+    margin-left: -1rem;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.address {
+    display: flex;
+}
+
+.address-text h6{
+    font-weight: 700;
+}
+
+footer {
+    padding-top: 3rem;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer span {
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+     .nav-menu {
+        display: block;
+        cursor: pointer;
+        
+        
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 1000px){
+    html {
+        font-size: 14px;
+    }
+   
+    .exp img {
+        aspect-ratio: 4/3;
+        width: 70%;
+        
+    }
+    .ban {
+        margin-left: 0rem;
+        z-index: 1;
+        
+    }
+    .feature-text{
+        padding: 3rem;
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media (max-width: 700px){
+    html {
+        font-size: 12px;
+    }
+    .flex h3 {
+        font-size: 1.7rem;   
+    }
+} 
+
+@media (max-width: 500px){
+    html {
+        font-size: 12px;
+    }
+    #showcase h2 {
+        font-size: 2.2rem;
+    }
+
+    .overflow-hidden img {
+        width: 79%;
+    }
+
+    #attorney img{
+    width: 15rem;
+    }
+
+
+    #review h1{
+        font-size: 1.8rem;
+    }
+    #review h4{
+        font-size: 1.5rem;
+    }
+
+    .td {
+        display: block;
+    }
+    #appointment form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+} 

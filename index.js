@@ -1,0 +1,25 @@
+(function(){
+    'use strict';
+
+     function showSidebar(){
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = 'flex'
+        }
+        
+        function hideSidebar(){
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = 'none'
+        }
+
+         $('#date').datetimepicker({
+        format: 'L'
+        });
+        $('#time').datetimepicker({
+            format: 'LT'
+        });
+
+
+
+ 
+
+})

@@ -1,0 +1,644 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html {
+    font-size: 18px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-image: url('https://cdn.pixabay.com/photo/2024/04/06/17/41/ai-generated-8679714_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20rem;
+    color: white;
+    text-align: center;
+    animation: fadeInOut 3.1s;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .5rem;
+
+}
+
+h1 img {
+    padding-right: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+nav img {
+    width: 4rem;
+}
+
+nav  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav ul li a:hover{
+    padding: 1rem;
+    border-bottom: 1px solid white;
+    
+}
+
+nav .active {
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 999;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    background-color: rgba(16, 14, 14, 0.66);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    display: none;
+       
+    
+}
+
+.nav-menu {
+    display: none;
+}
+#showcase h2{
+    font-weight: 200;
+    font-size: 5rem;
+    padding-top: 15rem;
+    letter-spacing: -1px;
+    animation: fadeIn 3.1s;
+
+}
+
+
+
+#showcase a:hover {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+
+}
+
+#rooms {
+    padding-top: 7rem;
+    background-color: rgba(232, 221, 199, 0.5);
+    color: black;
+    animation: fadeInOut 3.1s;
+    
+}
+
+.explore {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore h3{
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(158, 105, 21);
+    padding-bottom: 2rem;
+}
+
+.explore h4 {
+    font-size: 2rem;
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+
+.explore p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    /* font-style: italic; */
+
+    padding-bottom: 2rem;
+}
+
+
+.rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-bottom: 2rem;
+}
+
+.rooms h3 {
+    font-weight: 200;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.rooms h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+.rooms p{
+    font-weight: 200;
+    font-style: 0.5rem;
+}
+
+.rooms span {
+    font-weight: 600;
+}
+.room-img img {
+    width: 35rem;
+    aspect-ratio: 400/400;
+}
+
+
+.p-tags img {
+    width: 1.5rem;
+}
+
+.p-tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.p-tags p {
+    display: inline-flex;
+    font-size: .8rem;
+}
+
+.room-img {
+    order: 1;
+}
+
+.room-2 {
+    order: 2;
+}
+
+.room-img {
+    order: 1;
+}
+
+.room-4 {
+    order: 2;
+}
+.rooms button {
+    margin-top: 1rem;
+    border: none;
+    background-color: goldenrod;
+    padding: 1rem;
+}
+
+.rooms button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+@keyframes fadeIn {
+from{transform: translateY(0);}
+to{transform: translateY(-1rem);}
+from{opacity: 0;}
+to{opacity: 1;}
+}
+@keyframes fadeInOut {
+
+from{opacity: 0;}
+to{opacity: 1;}
+}
+
+#appointment {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: rgba(232, 221, 199, 0.238);
+}
+
+.appointment:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out 0.9s;
+    box-shadow: 5px 5px 10px black;
+}
+
+.appointment {
+    background-image: url('https://cdn.pixabay.com/photo/2021/06/28/11/29/police-6371309_1280.jpg');
+     background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(50%); */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    padding: 5rem;
+    
+}
+
+.appointment h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#appointment form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-group {
+    padding-bottom: 1rem;
+}
+
+.td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#date {
+    width: 100%;
+}
+#time {
+    width: 100%;
+}
+.appointment select {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.appointment button {
+    width: 100%;
+    color: white;
+    background-color: rgb(187, 141, 25);
+    padding: 1rem;
+}
+
+.appointment button:hover {
+    color: white;
+    background-color: rgb(1, 1, 25);
+    transition: 0.5s ease 0.5s;
+    
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+   
+   
+}
+
+.foot {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.foot ul li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.book_now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+#call-now {
+    background-image: url('https://cdn.pixabay.com/photo/2017/06/09/22/56/lady-justice-2388500_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5rem;
+}
+
+#call-now h4{
+    font-size: 3rem;
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+
+#call-now a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(187, 141, 25);
+    padding: 2rem;
+    border-radius: 1rem;
+    animation: fadeInOut 3.1s;
+
+}
+
+#call-now a:hover {
+    background-color: black;
+    transform: scale(1.6);
+    transition: 0.6s ease-in 0.8s;
+}
+
+
+#summary {
+    padding-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.867);
+    /* padding-bottom: 3rem; */
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 3rem;
+    color: white;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+.flex a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1rem;
+}
+
+.flex h5 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flex h4 {
+    color: white;
+}
+
+.flex h6, .flex p {
+    font-size: 0.8rem;
+}
+
+.first h3 {
+    font-weight: 200;
+    font-size: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+.first h3 img {
+    width: 3rem;
+}
+.first h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: flex;
+    
+}
+
+.input input {
+    padding: 1rem;
+    width: 85%;
+    border: none;
+
+}
+
+.input button {
+    border: none;
+    color: white;
+    background-color: black;
+    margin-left: -1rem;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.address {
+    display: flex;
+}
+
+.address-text h6{
+    font-weight: 700;
+}
+
+footer {
+    padding-top: 3rem;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer span {
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+    .nav-menu {
+        display: block;
+        cursor: pointer;
+        
+        
+    }
+
+    .nav-bar {
+        display: none;
+    }
+    .explore {
+        width: 100%;
+    }
+
+    .explore h4 {
+        font-size: 1.5rem;
+        
+    }
+
+    .explore p {
+        font-size: .8rem;
+       
+    }
+
+    .rooms {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .room-1 {
+        order: 1;
+    }
+    .room-3 {
+        order: 1;
+    }
+    .room-5 {
+        order: 1;
+
+    }
+
+    .room-img {
+        margin-bottom: -3rem;
+    }
+
+    .room-img img {
+        width: 100%;
+    }
+
+    
+
+}
+
+@media (max-width: 1000px){
+    html {
+        font-size: 14px;
+    }
+    
+
+    
+
+    .exp img {
+        aspect-ratio: 4/3;
+        width: 70%;
+        
+    }
+    
+    .contact-main {
+        display: block;
+        gap: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feature-text{
+        padding: 3rem;
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media (max-width: 700px){
+    html {
+        font-size: 12px;
+        
+    }
+
+    .flex h3 {
+        font-size: 1.7rem;   
+    }
+} 
+
+@media (max-width: 590px){
+    html {
+        font-size: 12px;
+    }
+    #showcase h2 {
+        font-size: 2.2rem;
+    }
+
+    .overflow-hidden img {
+        width: 79%;
+    }
+
+    #review h1{
+        font-size: 2rem;
+    }
+    #review h4{
+        font-size: 1.5rem;
+    }
+
+        .contact-info {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .td {
+        display: block;
+    }
+    #appointment form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+} 
