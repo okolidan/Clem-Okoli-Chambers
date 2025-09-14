@@ -167,8 +167,8 @@ nav .active {
 }
 
 .explore p {
-    font-size: 1.2rem;
-    font-weight: 200;
+    font-size: 1.3rem;
+    font-weight: 300;
     /* font-style: italic; */
 
     padding-bottom: 2rem;
@@ -192,12 +192,12 @@ nav .active {
 
 .rooms h4 {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding-bottom: 1rem;
 }
 .rooms p{
-    font-weight: 200;
-    font-style: 0.5rem;
+    font-weight: 300;
+    font-size: 1.1rem;
 }
 
 .rooms span {
@@ -209,24 +209,6 @@ nav .active {
 }
 
 
-
-.p-tags img {
-    width: 1.5rem;
-}
-
-.p-tags {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding-bottom: 1rem;
-}
-
-.p-tags p {
-    display: inline-flex;
-    font-size: .8rem;
-}
 
 .room-img {
     order: 1;
