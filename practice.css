@@ -204,9 +204,10 @@ nav .active {
     font-weight: 600;
 }
 .room-img img {
-    width: 35rem;
+    width: 100%;
     aspect-ratio: 400/400;
 }
+
 
 
 .p-tags img {
@@ -242,6 +243,31 @@ nav .active {
 .room-4 {
     order: 2;
 }
+
+.room-img {
+    order: 1;
+}
+
+.room-6 {
+    order: 2;
+}
+
+.room-img {
+    order: 1;
+}
+
+.room-8 {
+    order: 2;
+}
+
+.room-img {
+    order: 1;
+}
+
+.room-10 {
+    order: 2;
+}
+
 .rooms button {
     margin-top: 1rem;
     border: none;
@@ -543,6 +569,14 @@ footer span {
         order: 1;
     }
     .room-5 {
+        order: 1;
+
+    }
+     .room-7 {
+        order: 1;
+
+    }
+     .room-9 {
         order: 1;
 
     }

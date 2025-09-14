@@ -23,7 +23,7 @@
 
     <link rel="icon" href="https://cdn.pixabay.com/photo/2012/04/18/01/19/scales-36417_1280.png" type="image/jpg">
   </head>
-  <body oncontextmenu="return false">  
+  <body oncontextmenu="return fals">  
       
     <header class="fixed-top">
         <nav>
@@ -58,7 +58,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active a">
                 <h2>Trusted Legal Solutions for Life’s Toughest Challenges</h2>
-                <p>Our experienced attorneys provide personalized legal support in family law, criminal defense, personal injury, and more. We’re committed to protecting your rights and achieving the best possible outcome.</p>
+                <p>Our experienced attorneys provide personalized legal support in family law, criminal defense, and more. We’re committed to protecting your rights and achieving the best possible outcome.</p>
                 <a href="tel:+2349013092478">Call Us</a>
             </div>
             <div class="carousel-item b">
@@ -84,7 +84,7 @@
                     <h6 class="text-uppercase">Our Practice</h6>
                     <h1 class="mb-4">Our Practice Areas</h1>
                     <p>We offer a wide range of legal services tailored to meet the diverse needs of our clients. From family and business law to litigation and beyond, our experienced team is dedicated to providing effective, results-driven representation across every area of practice.</p>
-                    <a href="" class="btn btn-dark mt-2">Read More</a>
+                    <a href="practice.html" class="btn btn-dark mt-2">Read More</a>
                 </div>
                 <div class="col-lg-7 pt-5 pt-lg-0">
                     <div class="bg-dark rounded" style="height: 200px;"></div>
@@ -154,7 +154,7 @@
                     <h6 class="text-uppercase">Want to know about Us?</h6>
                     <h1 class="mb-4">Experience You Can Rely On</h1>
                     <p>Our firm combines legal knowledge with real-world experience to guide clients through complex legal challenges. We’ve successfully represented individuals, families, and businesses, always focusing on practical advice and strong advocacy. When you work with us, you benefit from a team that understands both the law and your goals.</p>
-                    <a href="" class="btn btn-dark mt-2">Learn More</a>
+                    <a href="about.html" class="btn btn-dark mt-2">Learn More</a>
                 </div>
             </div>
         </div>
@@ -353,10 +353,10 @@
                         </div>
                         <div class="td">
                             <div class="form-group"  id="date" data-target-input="nearest">
-                                <input type="date" id="date" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"/>
+                                <input type="date" id="dateInput" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"/>
                             </div>
                             <div class="form-group" id="time" data-target-input="nearest">
-                                <input type="time" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Time" data-target="#time" data-toggle="datetimepicker"/>
+                                <input type="time" id="timeInput" class="form-control border-0 p-4 datetimepicker-input" data-target="#time" data-toggle="datetimepicker"/>
                             </div>
                         </div>
                         <div class="form-group">
@@ -497,6 +497,24 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
+
+
+        // Time and date
+
+        const now = new Date();
+
+        // Format the date as YYYY-MM-DD
+        const currentDate = now.toISOString().split('T')[0];
+
+        // Format the time as HH:MM
+        const currentTime = now.toTimeString().split(' ')[0].slice(0, 5);
+
+        // Set the values to the input fields
+        document.getElementById('dateInput').value = currentDate;
+        document.getElementById('timeInput').value = currentTime;
+        
+        
+
   </script>
 
   </body>

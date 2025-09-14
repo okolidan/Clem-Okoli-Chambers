@@ -167,13 +167,13 @@ nav .active {
 
 .explore h4 {
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 500;
     padding-bottom: 1rem;
 }
 
 .explore p {
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 300;
     /* font-style: italic; */
 
     padding-bottom: 5rem;
@@ -189,7 +189,7 @@ nav .active {
 }
 .explore-2 p {
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 300;
     /* font-style: italic; */
 
     padding-bottom: 5rem;
