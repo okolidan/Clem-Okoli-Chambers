@@ -36,13 +36,11 @@ header h1 {
     text-transform: uppercase;
     font-size: 1.2rem;
     letter-spacing: -1px;
-    
     letter-spacing: .2rem;
     margin-left: 1rem;
     color: black;
     font-family: "myFirstFont", cursive;
-  font-weight: 700;
-    font-optical-sizing: auto;
+    
     
 }
 
