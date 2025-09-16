@@ -18,6 +18,12 @@ html {
     margin-right: auto;
 }
 
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('OldEnglishFive.ttf');
+}
+
 header {
     background-image: url('https://cdn.pixabay.com/photo/2020/06/13/07/17/legal-5293009_1280.jpg');
     background-repeat: no-repeat;
@@ -38,7 +44,7 @@ header h1 {
     text-transform: uppercase;
     font-size: 1.5rem;
     letter-spacing: .5rem;
-    font-family: "Satisfy", cursive;
+    font-family: "myFirstFont", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
 
@@ -80,7 +86,7 @@ nav ul li {
 nav ul li a{
     text-decoration: none;
     color: white;
-    
+    transition: 0.7s ease, transform 2.3s ease;
 }
 
 nav ul li a:hover{
