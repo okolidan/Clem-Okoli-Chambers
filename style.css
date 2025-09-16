@@ -32,11 +32,10 @@ header {
 
 header h1 {
     text-align: center;
-    font-weight: 700;
+    font-weight: 200;
     text-transform: uppercase;
     font-size: 1.2rem;
-    letter-spacing: -1px;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     margin-left: 1rem;
     color: black;
     font-family: "myFirstFont", cursive;
