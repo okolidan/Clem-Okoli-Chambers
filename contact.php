@@ -12,9 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name    = $_POST['name'];
     $email   = $_POST['email'];
     $subject = $_POST['subject'];
-    $date = $_POST['date'];
-    $time = $_POST['time'];
-    
+    $message = $_POST['message'];
 
     $mail = new PHPMailer(true);
 
@@ -34,15 +32,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Content
         $mail->isHTML(true);                                  
-        $mail->Subject = "New Appointment Form Submission - $subject";
+        $mail->Subject = "New Contact Form Submission - $subject";
         $mail->Body    = "
             <h3>Contact Form Submission</h3>
             <p><b>Name:</b> $name</p>
             <p><b>Email:</b> $email</p>
-            <p><b>Subject:</b> $subject</p>
-            <p><b>Date:</b> $date</p>
-            <p><b>Time:</b> $time</p>
-            
+            <p><b>Service:</b> $subject</p>
+            <p><b>Message:</b><br>$message</p>
         ";
 
         $mail->send();

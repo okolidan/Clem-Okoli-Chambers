@@ -164,6 +164,8 @@ h1 {
     text-align: start;
 }
 
+
+
 form input,
 form textarea,
 form select {
@@ -211,6 +213,10 @@ form div {
     font-size: 1.5rem;
     padding-top: 1rem;
     font-weight: 200;
+}
+
+.contact-info p a {
+    color: black;
 }
 
 .contact-form {

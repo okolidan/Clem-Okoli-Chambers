@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="Law Lawyer Attorney Attorneys Barrister" name="keywords">
-    <meta content="law-firm, lawyers" name="description">
+    <meta content="clem, clemokoli, clem okoli & co chambers, clemokoli chambers, chambers, Law, Lawyer, Attorney, Attorneys, Barrister" name="keywords">
+    <meta content="Discover the full range of legal services at Clem Okoli & Co Chambers. Our practice areas cover corporate law, litigation, real estate, family law, and more—providing clients with trusted, tailored solutions." name="description">
     
     <title>Clem Okoli & Co Chambers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -286,23 +286,23 @@
         <div class="container">
             <div class="appointment">
                 <h3>Schedule an Appointment</h3>
-                <form action="" method="post">
+                <form action="connect.php" method="post">
                         <div class="form-group">
-                            <input type="text" id="name" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
+                            <input type="text" name="name" id="name" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
                         </div>
                         <div class="form-group">
-                            <input type="text" id="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                            <input type="text" name="email" id="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
                         </div>
                         <div class="td">
                             <div class="form-group"  id="date" data-target-input="nearest">
-                                <input type="date" id="dateInput" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"/>
+                                <input type="date"  name="date" id="dateInput" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"/>
                             </div>
                             <div class="form-group" id="time" data-target-input="nearest">
-                                <input type="time" id="timeInput" class="form-control border-0 p-4 datetimepicker-input" data-target="#time" data-toggle="datetimepicker"/>
+                                <input type="time"  name="time" id="timeInput" class="form-control border-0 p-4 datetimepicker-input" data-target="#time" data-toggle="datetimepicker"/>
                             </div>
                         </div>
                         <div class="form-group">
-                            <select class="custom-select border-0">
+                            <select class="custom-select border-0"  name="subject">
                                 <option selected>Select A Service</option>
                                 <option value="criminal-law">Criminal Law</option>
                                 <option value="family-law">Family Law</option>
@@ -314,7 +314,7 @@
                             </select>
                         </div>
                         <div>
-                            <button class="btn" type="submit">Book Appointment</button>
+                            <button class="btn" type="submit" name="message">Book Appointment</button>
                         </div>
                 </form>
             </div>
@@ -384,21 +384,21 @@
                         <img src="" alt="">
                         <div class="address-text">
                             <h6>Email</h6>
-                            <p>info@clemokolichambers.com</p>
+                            <p><a href="mailto:info@clemokolichambers.com">info@clemokolichambers.com</a></p>
                         </div>
                     </div>
                     <div class="address">
                         <img src="" alt="">
                         <div class="address-text">
                             <h6>Phone</h6>
-                            <p>+234 703 840 8780</p>
+                            <p><a href="tel: +2347038408780">+234 703 840 8780</a></p>
                         </div>
                     </div>
                     <div class="address">
                         <img src="" alt="">
                         <div class="address-text">
                             <h6>Whatsapp</h6>
-                            <p>+44 738 052 3215</p>
+                            <p><a href="whatsapp://send?text=Hello World!&phone=+447380523215">+44 738 052 3215</a></p>
                         </div>
                     </div>
                 </div>
